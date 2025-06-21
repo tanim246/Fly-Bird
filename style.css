@@ -28,6 +28,8 @@ nav h1 {
 nav div {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 nav div a {
@@ -69,7 +71,7 @@ nav div .btn {
   gap: 16px;
   flex: 50%;
 }
-
+/* span */
 .Banner-container .contant span {
   background-color: rgb(255, 0, 0);
   color: white;
@@ -137,4 +139,30 @@ nav div .btn {
   justify-content: center;
   align-items: center;
   gap: 4px;
+}
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width:700px) {
+    body{
+        padding: 10px;
+    }
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+    nav .btn{
+        text-align: center;
+    }
+
+    .Banner-container{
+        flex-direction: column-reverse;
+    }
+
+
 }
