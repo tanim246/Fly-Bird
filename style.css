@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.max-width {
+  max-width: 1040px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* naver */
+nav {
+  /* background-color: red; */
+  /* border: 1px solid red; */
+  padding: 12px 0px;
+  display: flex;
+  color: red;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+nav div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+nav div a {
+  text-decoration: none;
+  color: red;
+  font-size:16px;
+  display: flex;
+  gap: 4px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  align-items: center;
+}
+
+nav div .btn {
+  border-radius: 6px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+  /* font-size: 16px; */
+}
+
+/* banner- container */
+
+.Banner-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  gap: 80px;
+}
+
+.Banner-container .contant {
+  /* background-color: chartreuse; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  flex: 50%;
+}
+
+.Banner-container .contant span {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 0 4px 4px 0;
+  padding-right: 4px;
+}
+
+.Banner-container .contant h1 {
+  font-size: 48px;
+}
+.Banner-container .contant button {
+  width: 130px;
+  border-radius: 6px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Banner-container .banner-image {
+  flex: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.Banner-container .banner-image:hover{
+
+}
+
+/* Card position */
+.small-card {
+  /* border: 1px solid red; */
+  background-color: red;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+.course-1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  left: 0%;
+  top: 20%;
+}
+.course-2 {
+  position: absolute;
+  left: 0;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.course-3 {
+  position: absolute;
+  right: 50px;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
