@@ -151,9 +151,21 @@ nav div .btn {
 }
 
 /* card style design */
+
 .card-section {
   /* border: 1px solid red; */
 }
+
+.card-section .card-heading{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-section .card-heading h1{
+  font-size: 48px;
+}
+
+
 
 .main-card-container {
   display: grid;
@@ -260,5 +272,18 @@ nav div .btn {
 
   .Banner-container {
     flex-direction: column-reverse;
+    text-align: center;
   }
+  .Banner-container .contant button{
+    margin-left: 32%;
+  }
+
+
+
+/* main-card-container */
+
+.main-card-container{
+  grid-template-columns: 1fr;
+}
+
 }
