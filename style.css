@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  margin: 0;
+  /* height: 100vh; */
+  background: linear-gradient(to bottom right, #ffffff, #ffffff);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
 
 .max-width {
   max-width: 1040px;
@@ -35,10 +44,11 @@ nav div {
 nav div a {
   text-decoration: none;
   color: black;
-  font-size:16px;
+  font-size: 16px;
   display: flex;
   gap: 4px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   align-items: center;
 }
 
@@ -100,8 +110,7 @@ nav div .btn {
   justify-content: center;
 }
 
-.Banner-container .banner-image:hover{
-
+.Banner-container .banner-image:hover {
 }
 
 /* Card position */
@@ -141,28 +150,115 @@ nav div .btn {
   gap: 4px;
 }
 
+/* card style design */
+.card-section {
+  /* border: 1px solid red; */
+}
 
+.main-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  /* background-color: chartreuse; */
+}
 
+.main-card-container .card .card-image img {
+  width: 100%;
+  border-radius: 5% 0 0 0;
+}
 
+.main-card-container .card {
+  background-color: #f6ebe8;
+  /* background-color: rgb(255, 0, 0); */
+  /* background-color: rgb(254, 230, 230); */
+  border-radius: 5% 0 5% 0;
+  border: 5px solid transparent;
+  /* border-left: 1px solid black;
+ border-right: 1px solid black;
+ border-bottom: 1px solid black; */
+}
+
+.card .card-contant {
+  padding: 6px;
+  color: black;
+}
+.card .card-contant h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+}
+
+.card .card-contant p {
+  color: rgb(82, 77, 77);
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.card .card-contant .Duration {
+  /* background-color: chartreuse; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  /* gap: 6px; */
+}
+
+.card .card-contant .Duration .fee {
+  display: flex;
+  font-style: italic;
+  flex-direction: column;
+}
+.card .card-contant .Duration p {
+  color:rgb(82, 77, 77);
+  /* margin-left: 6px; */
+  font-family: sans-serif;
+}
+.card .card-contant .Duration p i{
+  margin-right: 4px;
+  color: red;
+}
+.card .card-contant .Duration .fee span {
+  color: rgb(82, 77, 77);
+}
+
+.card .card-contant button {
+  width: 100%;
+  padding: 8px 0;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 4px;
+  font-family: sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: none;
+  border-radius: 0 0 10px 0;
+}
+
+/* button hover */
+
+.card .card-contant button:hover {
+  background-color: white;
+  border: 1.5px solid red;
+  color: red;
+}
 
 /* responsive */
-@media only screen and (max-width:700px) {
-    body{
-        padding: 10px;
-    }
-    nav{
-        flex-direction: column;
-        gap: 15px;
-        /* align-items: center; */
-        /* text-align: center; */
-    }
-    nav .btn{
-        text-align: center;
-    }
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    /* align-items: center; */
+    /* text-align: center; */
+  }
+  nav .btn {
+    text-align: center;
+  }
 
-    .Banner-container{
-        flex-direction: column-reverse;
-    }
-
-
+  .Banner-container {
+    flex-direction: column-reverse;
+  }
 }
