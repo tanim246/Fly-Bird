@@ -320,25 +320,25 @@ nav div .btn {
 
 footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: black;
   color: white;
-  align-items: center;
-  /* padding: 24px 50px; */
+  padding: 20px;
 }
+
 .footer-contant{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-left: 24px;
+  gap: 12px;
 }
-
 .footer-contant .footer-icon{
   display: flex;
+  justify-content: center;
   gap: 12px;
 }
 footer .footer-logo{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -346,6 +346,7 @@ footer .footer-logo{
 .footer-contant p{
   font-size: 13px;
   font-family: sans-serif;
+  text-align: center;
 }
 
 /* responsive */
