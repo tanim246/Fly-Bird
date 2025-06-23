@@ -255,9 +255,98 @@ nav div .btn {
   color: red;
 }
 
+/* contact section */
+
+.Contact-Section{
+  /* background-color: aquamarine; */
+  margin-bottom: 50px;
+  margin-top: 60px;
+  /* border: 1px solid red; */
+}
+.contact-contant{
+  margin-bottom: 30px;
+}
+.contact-contant h1{
+  font-size: 45px;
+}
+.contact-contant p{
+  font-size: 16px;
+  margin-top: 6px;
+  font-family: sans-serif;
+}
+
+
+
+.contact-box{
+  width: 50%;
+}
+  
+
+.contact-box .input-tag form{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contact-box .input-tag input,textarea{
+  padding: 12px;
+  border: 1px solid red;
+  outline-color: red;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  resize: none;
+}
+.contact-box .input-tag label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.form-btn{
+  display: flex;
+  gap: 13px;
+
+}
+.form-btn button{
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+  /* padding: 24px 50px; */
+}
+.footer-contant{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 24px;
+}
+
+.footer-contant .footer-icon{
+  display: flex;
+  gap: 12px;
+}
+footer .footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contant p{
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
 /* responsive */
 @media only screen and (max-width: 700px) {
-  body {
+  main {
     padding: 10px;
   }
   nav {
@@ -286,4 +375,28 @@ nav div .btn {
   grid-template-columns: 1fr;
 }
 
+
+/* conntact responsive */
+
+.contact-box{
+  width: 100%;
+}
+.footer-contant{
+  text-align: center;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+footer{
+  flex-direction: column-reverse;
+}
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
+.footer-contant .footer-logo{
+  justify-content: center;
+}
+.Tanim{
+  padding-top: 13px;
+}
 }
